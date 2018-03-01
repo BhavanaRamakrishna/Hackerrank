@@ -6,18 +6,15 @@ import java.util.regex.*;
 
 public class Solution {
 
-	static long aVeryBigSum(int n, long[] ar) {
-		// Complete this function
-	}
-
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();
-		long[] ar = new long[n];
-		for(int ar_i = 0; ar_i < n; ar_i++){
-			ar[ar_i] = in.nextLong();
+		int arr[] = new int[n];
+		long sum = 0;
+		for(int arr_i=0; arr_i < n; arr_i++){
+			arr[arr_i] = in.nextInt();
+			sum = sum + arr[arr_i];
 		}
-		long result = aVeryBigSum(n, ar);
-		System.out.println(result);
+		System.out.println(sum);
 	}
 }
